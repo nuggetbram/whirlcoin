@@ -1251,7 +1251,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 
     float block = nHeight * 1.0 + 1.0 - 1.0;
 
-    reward = -sqrt(block) + 3400.0 * COIN;
+    reward = -sqrt(block * 0.0029) + 100.0 * COIN;
 
     int64 nSubsidy = reward;
 
