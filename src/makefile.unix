@@ -145,8 +145,9 @@ OBJS= \
     obj/leveldb.o \
     obj/txdb.o \
     obj/chainparams.o \
-    obj/skein.o
-
+    obj/skein.o \
+    obj/whirlpool.o \
+#include "sph_whirlpool.h"
 all: whirlcoind
 
 test check: test_whirlcoin FORCE

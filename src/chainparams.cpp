@@ -47,9 +47,9 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime    = 1403758350;
+        genesis.nTime    = 1403852000;
         genesis.nBits    = 0x1e0fffff;
-        genesis.nNonce   = 1532698;
+        genesis.nNonce   = 1376737;
         
         //// debug print
         hashGenesisBlock = genesis.GetHash();
@@ -86,7 +86,7 @@ public:
         printf("genesis.nTime = %u \n", genesis.nTime);
         printf("genesis.nNonce = %u \n", genesis.nNonce);
               */
-        assert(hashGenesisBlock == uint256("0x000000c1d37af38ced9ceff1ee37e0dfbbdd86cfa3bc2befb0a63ee85603b8d5"));
+        assert(hashGenesisBlock == uint256("0x00000dffc654ad0a8d9055536135b69d71dcd878d901508fc9381bde67bf0645"));
         assert(genesis.hashMerkleRoot == uint256("0x94076775c950c86d89bc2225c87bcb4e29621b57d5e9b430d7fa190078b0e980"));
 
         vSeeds.push_back(CDNSSeedData("162.248.4.167", "162.248.4.167"));
