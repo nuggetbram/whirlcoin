@@ -8,7 +8,7 @@
 #include "uint256.h"
 #include "serialize.h"
 #include "script.h"
-
+#include "hash.h"
 #include <stdio.h>
 
 class CTransaction;

@@ -216,7 +216,7 @@ HEADERS += src/qt/bitcoingui.h \
     src/limitedmap.h \
     src/qt/splashscreen.h \
     src/qt/intro.h \
-    src/sph_skein.h \
+    src/sph_whirlpool.h \
     src/sph_types.h
 
 SOURCES += src/qt/bitcoin.cpp \
@@ -289,7 +289,7 @@ SOURCES += src/qt/bitcoin.cpp \
     src/txdb.cpp \
     src/qt/splashscreen.cpp \
     src/qt/intro.cpp \
-    src/skein.c
+    src/whirlpool.c
 
 RESOURCES += src/qt/bitcoin.qrc
 

@@ -5,6 +5,7 @@
 
 #include "core.h"
 #include "util.h"
+#include "sph_whirlpool.h"
 
 std::string COutPoint::ToString() const
 {

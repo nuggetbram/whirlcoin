@@ -13,6 +13,9 @@
 #include <openssl/ripemd.h>
 #include <vector>
 
+#ifndef QT_NO_DEBUG
+#include <string>
+#endif
 
 template<typename T1>
 inline uint256 HashWhirlpool(const T1 pbegin, const T1 pend)
@@ -33,6 +36,10 @@ inline uint256 HashWhirlpool(const T1 pbegin, const T1 pend)
     return hash2;
 }
 
+#ifndef QT_NO_DEBUG
+    //std::string strhash;
+    //strhash = "";
+#endif
 
 template<typename T1>
 inline uint256 Hash(const T1 pbegin, const T1 pend)
