@@ -1245,20 +1245,15 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
     return pblock->GetHash();
 }
 
-int64_t static GetBlockValue(int nHeight, int64 nFees)
+int64 static GetBlockValue(int nHeight, int64 nFees)
 {
-    int reward;
-    int64_t nSubsidy = 50 * COIN;
+    float block;
 
-    if( nHeight >= 5.0)
-        {
+    block = static_cast<double>(nHeight);
 
-    nSubsidy >>= reward;
-        }
+    double reward = -sqrt(block * 0.0029) + 100.0 * COIN;
 
-
-    reward = -sqrt(nHeight * 0.0029) + 100.0 * COIN;
-
+    double nSubsidy = reward;
 
     return nSubsidy + nFees;
 }
